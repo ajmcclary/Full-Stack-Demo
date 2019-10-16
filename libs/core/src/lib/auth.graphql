@@ -1,0 +1,47 @@
+query currentUser {
+  me {
+    ...UserData
+  }
+}
+
+mutation signup($email: String!, $password: String!) {
+  signup(email: $email, password: $password) {
+    token {
+      ...AuthToken
+    }
+    user {
+      ...UserData
+    }
+  }
+}
+
+mutation login($email: String!, $password: String!) {
+  login(email: $email, password: $password) {
+    token {
+      ...AuthToken
+    }
+    user {
+      ...UserData
+    }
+  }
+}
+
+mutation forgotPassword($email: String!) {
+  forgotPassword(email: $email)
+}
+
+mutation resetPassword($password: String!, $token: String!) {
+  resetPassword(token: $token, password: $password)
+}
+
+fragment AuthToken on AuthToken {
+  expiresIn
+  accessToken
+}
+
+fragment UserData on User {
+  id
+  active
+  email
+  apiKey
+}

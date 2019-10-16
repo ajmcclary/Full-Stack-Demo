@@ -17,8 +17,29 @@
     "api": {
       "tags": []
     },
-    "api-interfaces": {
-      "tags": []
+    "api-photon": {
+      "tags": ["api"]
+    },
+    "api-auth": {
+      "tags": ["api"]
+    },
+    "api-shared": {
+      "tags": ["api"]
+    },
+    "api-user": {
+      "tags": ["api"]
+    },
+    "graphql": {
+      "tags": ["demo"]
+    },
+    "core": {
+      "tags": ["demo"]
+    },
+    "auth": {
+      "tags": ["demo"]
+    },
+    "dashboard": {
+      "tags": ["demo"]
     }
   }
 }

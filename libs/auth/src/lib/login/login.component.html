@@ -1,0 +1,20 @@
+<h1>Log In</h1>
+
+<form name="loginForm" [formGroup]="loginForm">
+<p>
+  <label>Email</label>
+  <input formControlName="email" autocomplete="username">
+</p>
+  <p>
+  <label>Password</label>
+  <input type="password" formControlName="password" autocomplete="current-password">
+  </p>
+  <p>
+  <button (click)="login()" aria-label="LOG IN">
+    Log In
+  </button>
+  </p>
+  <p>
+  <a [routerLink]="'/auth/sign-up'">Create an Account</a>
+  </p>
+</form>

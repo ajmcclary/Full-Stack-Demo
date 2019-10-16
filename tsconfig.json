@@ -16,7 +16,15 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@demo/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@demo/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@demo/api/photon": ["libs/api/photon/src/index.ts"],
+      "@demo/api/auth": ["libs/api/auth/src/index.ts"],
+      "@demo/api/shared": ["libs/api/shared/src/index.ts"],
+      "@demo/api/user": ["libs/api/user/src/index.ts"],
+      "@demo/graphql": ["libs/graphql/src/index.ts"],
+      "@demo/core": ["libs/core/src/index.ts"],
+      "@demo/auth": ["libs/auth/src/index.ts"],
+      "@demo/dashboard": ["libs/dashboard/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

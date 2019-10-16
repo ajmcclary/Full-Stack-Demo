@@ -1,0 +1,11 @@
+generates:
+  ./libs/graphql/src/lib/types.ts:
+    schema: ./apps/api/schema.graphql
+    documents: ./libs/core/src/**/*.graphql
+    hooks:
+      afterOneFileWrite:
+        - prettier --write
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-apollo-angular

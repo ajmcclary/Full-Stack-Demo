@@ -1,0 +1,28 @@
+<h1>Create Account</h1>
+
+<form name="registerForm" [formGroup]="signupForm">
+<p>
+  <label>Email</label>
+  <input formControlName="email">
+</p>
+  <p>
+  <label>Password</label>
+  <input type="password" formControlName="password">
+  </p>
+  <p>
+  <label>Password (Confirm)</label>
+  <input type="password" formControlName="passwordRepeat">
+  </p>
+
+  <p>
+  <button aria-label="CREATE ACCOUNT" (click)="signup()">
+    Create Account
+  </button>
+  </p>
+  <p>
+  <a class="link" [routerLink]="'/auth/'">Log In</a>
+  </p>
+</form>
+
+
+
