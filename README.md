@@ -13,7 +13,7 @@ full stack development environment.
 * Start Services: 
     * **Prisma Admin:** cd libs/api/photon && prisma2 dev
     * **API:** npm start api
-    * **Web:** npm start web
+    * **Web:** npm start demo
 * Run Application: 
     * **Prisma Admin:** http://localhost:5555/
     * **API:** http://localhost:3333/graphql/
